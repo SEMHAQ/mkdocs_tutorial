@@ -2034,32 +2034,32 @@
 <h3 id="_12">项目计划<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <p>展示项目的时间安排和任务依赖：</p>
 <pre class="mermaid"><code>gantt
-    title 项目计划
+    title 项目开发计划
     dateFormat  YYYY-MM-DD
     section 需求分析
-    需求收集           :a1, 2024-01-01, 10d
-    需求分析           :a2, after a1, 5d
-    section 开发
-    前端开发           :b1, 2024-01-15, 20d
-    后端开发           :b2, 2024-01-15, 25d
-    section 测试
-    单元测试           :c1, after b1, 10d
-    集成测试           :c2, after b2, 15d
-    section 部署
-    部署上线           :d1, after c1 c2, 5d</code></pre>
+    需求收集       :a1, 2024-01-01, 10d
+    需求分析       :a2, after a1, 5d
+    section 开发阶段
+    前端开发       :b1, 2024-01-15, 20d
+    后端开发       :b2, 2024-01-15, 25d
+    section 测试阶段
+    单元测试       :c1, after b1, 10d
+    集成测试       :c2, after b2, 15d
+    section 部署上线
+    部署发布       :d1, after c1 c2, 5d</code></pre>
 <h3 id="_13">里程碑计划<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
-<p>展示项目关键节点：</p>
+<p>展示项目关键节点和时间安排：</p>
 <pre class="mermaid"><code>gantt
-    title 里程碑计划
+    title 项目里程碑计划
     dateFormat  YYYY-MM-DD
-    milestone 里程碑1
-    section 阶段1
-    任务1 :crit, done, a1, 2024-01-01, 10d
-    任务2 :crit, active, a2, after a1, 15d
-    milestone 里程碑2
-    section 阶段2
-    任务3 :b1, after a2, 20d
-    任务4 :b2, after b1, 10d</code></pre>
+    section 第一阶段
+    需求完成       :crit, done, m1, 2024-01-15, 1d
+    设计完成       :crit, active, m2, after m1, 1d
+    section 第二阶段
+    开发完成       :active, m3, 2024-02-20, 1d
+    测试完成       :m4, after m3, 1d
+    section 第三阶段
+    上线发布       :crit, m5, after m4, 1d</code></pre>
 <hr />
 <h2 id="_14">🎯 饼图<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
 <h3 id="_15">数据分布<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
